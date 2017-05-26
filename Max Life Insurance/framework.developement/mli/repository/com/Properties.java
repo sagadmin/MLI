@@ -1,6 +1,7 @@
 package mli.repository.com;
 
 import mli.appmethods.com.ContractSearchMethods;
+import mli.appmethods.com.TicketSearchMethods;
 
 public interface Properties 
 {

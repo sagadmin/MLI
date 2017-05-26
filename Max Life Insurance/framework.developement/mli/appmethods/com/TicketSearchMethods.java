@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import mli.pom.com.TicketSearchObjects;
 
-public class TicketSearchMethods extends ScrutinyMethods
+public  class TicketSearchMethods extends ScrutinyMethods
 {
   public void quicklink()
   {
@@ -62,10 +62,14 @@ public class TicketSearchMethods extends ScrutinyMethods
   
   public void fetchcase()
   {
+	  if(Childwindow != null){
 	  System.out.println(Childwindow);
 	  driver.switchTo().window(Childwindow);
+	  TicketSearchObjects.fetchcase.click();
+	  }else
 	  TicketSearchObjects.fetchcase.click();  
   }	
+  
   
   public void action()
   {
@@ -93,4 +97,25 @@ public class TicketSearchMethods extends ScrutinyMethods
 	  TicketSearchObjects.showall.click();
 	  }
   }
+    
+  
+//  ***********************************************
+  
+  public void enterticketno(String ar){
+	  TicketSearchObjects.ticketnumber.sendKeys(ar);
+  }
+  
+  public void serviceObject(){
+	  TicketSearchObjects.service.click();
+  }
+  
+  public void caseitem(){
+	  TicketSearchObjects.clickoncase.click();
+  }
+  
+  public void case_edit(){
+	  TicketSearchObjects.btn_edit.click();
+  }
+  
+  
 }

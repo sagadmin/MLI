@@ -46,15 +46,18 @@ public class ClaimMethods extends LoginMethod {
 		ClaimPage.EnterContactNumber.sendKeys(number);
 	}
 	
-	public static void IfFCRYes(){
+	public static void IfFCRYes(String action){
 		Select s = new Select(ClaimPage.IsFCR);
-		s.selectByVisibleText("Yes");		
+		s.selectByVisibleText(action);	
+		
 	}
 	
-	public static void IfFCRNo(){
-		Select s = new Select(ClaimPage.IsFCR);
-		s.selectByVisibleText("No");
-	}
+
+//	
+//	public static void IfFCRNo(){
+//		Select s = new Select(ClaimPage.IsFCR);
+//		s.selectByVisibleText("No");
+//	}
 	
 	public static void ProblemBox(){
 		ClaimPage.ProblemBox.sendKeys("Hello");
@@ -77,4 +80,21 @@ public class ClaimMethods extends LoginMethod {
 		}
 	}
 
+	public String GetStatus()
+	{
+		String status= ClaimPage.Status.getText();
+		return status;
+	}
+	
+	public String GetSubStatus()
+	{
+		String substatus= ClaimPage.SubStatus.getText();
+		return substatus;
+	}
+	
+	public String GetCaseId()
+	{
+		String CaseId=ClaimPage.CaseId.getText();
+		return CaseId;
+	}
 }

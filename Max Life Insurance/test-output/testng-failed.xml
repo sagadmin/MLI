@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="grv1.ClaimModule">
+      <class name="claims.ClaimModule">
         <methods>
           <include name="launchBrowser"/>
           <include name="NaviagtetoClaim"/>
         </methods>
-      </class> <!-- grv1.ClaimModule -->
+      </class> <!-- claims.ClaimModule -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

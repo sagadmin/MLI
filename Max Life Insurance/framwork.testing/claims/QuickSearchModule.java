@@ -1,4 +1,4 @@
-package grv1;
+package claims;
 
 import org.testng.annotations.Test;
 

@@ -44,4 +44,16 @@ public static WebElement IsFCR;
 @FindBy(id="cke_1_contents") //Click on Problem Box
 public static WebElement ProblemBox; 
 
+@FindBy(xpath=".//*[@id='collap-on1_2']/div[1]/div[1]/div")
+public static WebElement Status;
+
+@FindBy(xpath=".//*[@id='collap-on1_2']/div[1]/div[2]/div")
+public static WebElement SubStatus;
+
+@FindBy(xpath=".//*[@id='divContents']/div[1]/div[3]/div[1]/span")
+public static WebElement CaseId;
+
+
+@FindBy(xpath ="//*[@id='collap-on1_1']/div[2]/div[2]/div/a")
+public static WebElement getcaseOwner;
 }

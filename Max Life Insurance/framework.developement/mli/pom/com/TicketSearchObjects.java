@@ -56,7 +56,22 @@ public class TicketSearchObjects extends LoginObjects
 	
 	@FindBy(id="ui-id-12")
 	public static WebElement confirm;
-
+	
+	
+	//*****************************************
+	
+	@FindBy(id="m_c_vf_10005762_txt")
+	public static WebElement ticketnumber;
+	
+	@FindBy(xpath=".//*[@id='js-vnav']/li[5]/a/i")
+	public static WebElement service;
+	
+	@FindBy(xpath=".//*[@id='js-vnav']/li[5]/div/ul/li/a/span[2]")
+	public static WebElement clickoncase;
+	
+	@FindBy(xpath=".//*[@id='BTN_EDIT']/i")
+	public static WebElement btn_edit;
+	
 	
 	
 }

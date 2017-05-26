@@ -14,12 +14,14 @@ import mli.repository.com.Properties;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 
 public class InitBrowser implements Properties
 {
 	public static WebDriver driver=null;
-	@BeforeTest
+	
+	@BeforeMethod
 	public void launchBrowser()
 	{
 		
