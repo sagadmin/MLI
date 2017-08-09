@@ -35,5 +35,4 @@ public static WebElement non_grv_section;
 @FindBy(xpath="//*[@id='collap-on1_1']/div[13]/div[1]/div")	
 public static WebElement tct_status;
 
-
 }

@@ -13,7 +13,8 @@ public class QuickSearchModule extends ContractSearchMethods{
 	 EnterPassword("acid_qa");
 	 Login();
 	 Quicklink();
-	 PolicyNumberTxt("100472893");
+//	 PolicyNumberTxt("97969594");	//Check for this policy ID
+	 PolicyNumberTxt("000006494");
 	 ValidatePolicyNumber();
 	 CheckboxTick();
 	 Validate();

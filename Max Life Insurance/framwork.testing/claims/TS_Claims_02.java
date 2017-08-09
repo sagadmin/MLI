@@ -22,9 +22,9 @@ public class TS_Claims_02 extends ClaimMethods
 	enterCallerName("Test");
 	enterClaimantName("Test");
 	enterContactNumber("9856314789");
-	click_SSCSearch();
+//	click_SSCSearch();
 	enterSSCNameforSearch("Claim Status Inquiry");
-	selectssc();
+//	selectSearch();
 	clickSSCNextbtn();
 //	IfFCRNo();
 

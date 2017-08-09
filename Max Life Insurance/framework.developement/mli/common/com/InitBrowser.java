@@ -29,7 +29,7 @@ public class InitBrowser implements Properties
 	driver =new ChromeDriver();
 	ChromeOptions option= new ChromeOptions();
 	option.addArguments("--start-maximized");
-	driver.get(MaxSAURL);
+	driver.get(MaxProdSAURL);
 	new LoginObjects(driver);
 	new CSPage(driver);
 	new Contract_Search_Objects(driver);

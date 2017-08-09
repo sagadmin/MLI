@@ -13,6 +13,7 @@ public interface Properties
 	String FirefoxDriverPath="";
     String MaxSAURL= "http://maxunosa/sn/app/login/login";
     String MaxQAURL= "http://maxqa/sn/app/login/login";
+    String MaxProdSAURL= "http://maxprodsa/sn/app/login/login";
     
     ContractSearchMethods cs = new ContractSearchMethods();
 	

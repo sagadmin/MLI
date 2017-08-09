@@ -34,33 +34,55 @@ public  class ContractSearchMethods extends LoginMethod {
 		Contract_Search_Objects.btn_FetchData.click();
 	}
 
-	public void CheckboxTick() {
-		int i = 0;
-
-		if (i < 3 && Contract_Search_Objects.Checkbox1_Policy_ID.getText().length() > 0) {
+	public void CheckboxTick() throws InterruptedException{
+		int i = 0;		
+		if (Contract_Search_Objects.Checkbox1_Policy_ID.getText().length() > 0) {
+			if(i<= 2){
 			Contract_Search_Objects.CheckBox1.click();/// Policy ID Check box
+			System.out.println("...Check box ticked"+i);
 			i = i + 1;
 		}
-		if (i < 3 && Contract_Search_Objects.Checkbox2_First_Name.getText().length() > 0) {
-			Contract_Search_Objects.CheckBox2.click();/// First Name Check box															
+		}
+				
+		if (Contract_Search_Objects.Checkbox2_First_Name.getText().length() > 0) {
+			if(i<=2){
+			Contract_Search_Objects.CheckBox2.click();/// First Name Check box		
+			System.out.println("...Check box ticked"+i);
 			i = i + 1; 
 		}
-		if (i < 3 && Contract_Search_Objects.Checkbox3_Client_ID.getText().length() > 0) {
+		}
+		
+		if (Contract_Search_Objects.Checkbox3_Client_ID.getText().length() > 0) {
+			if(i<=2){
 			Contract_Search_Objects.CheckBox3.click();/// Client ID Check Box
+			System.out.println("...Check box ticked"+i);
 			i = i + 1;
 		}
-		if (i < 3 && Contract_Search_Objects.Checkbox4_Last_Name.getText().length() > 0) {
+		}
+		
+		if (Contract_Search_Objects.Checkbox4_Last_Name.getText().length() > 0) {
+			if(i<= 2){
 			Contract_Search_Objects.CheckBox4.click();/// Last Name Check box
+			System.out.println("...Check box ticked"+i);
 			i = i + 1;
 		}
-		if (i < 3 && Contract_Search_Objects.Checkbox5_DOB.getText().length() > 0) {
+		}
+		
+		if (Contract_Search_Objects.Checkbox5_DOB.getText().length() > 0) {
+			if(i<= 2){
 			Contract_Search_Objects.CheckBox5.click();/// DOB Check box
+			System.out.println("...Check box ticked"+i);
 			i = i + 1;
 		}
-		if (i < 3 && Contract_Search_Objects.Checkbox6_PIN_Code.getText().length() > 0) {
+		}
+		
+		if (Contract_Search_Objects.Checkbox6_PIN_Code.getText().length() > 0) {
+			if(i<= 2){
 			Contract_Search_Objects.CheckBox6.click();/// Pin Code Check box
 			i = i + 1;
 		}
+		}
+		
 	}
 
 	public void Validate() {
